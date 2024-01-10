@@ -1,0 +1,113 @@
+
+ header {
+     background-color: rgb(255,255,255);
+     color: #fff; /* Màu chữ của header */
+     padding: 5px; /* Khoảng cách từ nội dung đến viền header */
+     position: fixed; /* Phần header sẽ cố định khi cuộn trang */
+     width: 100%; /* Chiều rộng 100% của trang */
+     top: 0; /* Đặt phần header ở đỉnh trang */
+     z-index: 1000; /* Z-index để đảm bảo header nằm trên các phần tử khác */
+ }
+
+.box-top{
+	margin: 0;
+	display: flex;
+	border-bottom: 0.5px #eee solid;
+	justify-content: space-between;
+}
+
+.box-logo{
+	margin-left: 100px;
+}
+
+/* làm cho bộ lọc và sắp xếp theo đứng cùng 1 hàng*/
+.box-menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.box-menu ul{
+	list-style: none;
+	margin-right: 40px;
+	padding: 0;
+}
+
+/*chạm vào bộ lọc thì mới hiện menu con*/
+ul li:hover ul{
+	display: block;
+	position: absolute;
+	float: none;
+}
+
+ul li ul li{
+	float: none;
+	border: 1px #ccc solid;
+	padding: 5px 10px;
+	font-size: 10pt;
+}
+
+/* căn lề trên của 1 ô đầu tiên*/
+ul li ul li:first-child{
+	margin-top: 5px;
+}
+
+ul li a{
+	color: rgb(0,0,0);
+	text-decoration: none;
+}
+
+/* ẩn menu con*/
+ul li ul{
+	display: none;
+}
+
+.box-menu span{
+	color: rgb(0,0,0);
+}
+
+.box-menu select{
+	width: 100px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.box-right{
+	line-height: 50px; /* căn giữa*/
+	margin-right: 90px;
+}
+
+.box-right input {
+	margin-right: 10px;
+	border-radius: 5px;
+	padding: 8px;
+}
+
+.box-right a {
+	margin-right: 10px;
+}
+
+article{
+	padding: 10px;
+	min-height: 100vh;
+	margin-top: 80px;
+}
+
+.boximg {
+	float: right;
+	text-align: center;
+	margin: 5px 32px;
+	
+}
+
+.boximg img{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.boximg a{
+	display: block;
+	float: left;
+	text-decoration: none;
+	margin: 0 5px;
+}
